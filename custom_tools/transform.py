@@ -148,16 +148,13 @@ def horizontal_flip(prob, images, boxes=None):
     return images, flipped_boxes
 
 
-def uniform_crop(images, size, spatial_idx, boxes=None):
+def uniform_crop(images, size, boxes=None):
     """
     Perform uniform spatial sampling on the images and corresponding boxes.
     Args:
         images (tensor): images to perform uniform crop. The dimension is
             `num frames` x `channel` x `height` x `width`.
         size (int): size of height and weight to crop the images.
-        spatial_idx (int): 0, 1, or 2 for left, center, and right crop if width
-            is larger than height. Or 0, 1, or 2 for top, center, and bottom
-            crop if height is larger than width.
         boxes (ndarray or None): optional. Corresponding boxes to images.
             Dimension is `num boxes` x 4.
     Returns:
@@ -166,62 +163,23 @@ def uniform_crop(images, size, spatial_idx, boxes=None):
         cropped_boxes (ndarray or None): the cropped boxes with dimension of
             `num boxes` x 4.
     """
-    assert spatial_idx in [0, 1, 2]
     height = images.shape[2]
     width = images.shape[3]
+    if height > width:
+        y_offset = int(math.ceil((height - 224) / 2))
+        return images[:, :, y_offset:y_offset+224 ,:]
+    else:
+        x_offset = int(math.ceil((width - 224) / 2))
+        return images[:, :, :, x_offset:x_offset+224]
 
-    y_offset = int(math.ceil((height - size) / 2))
+    '''y_offset = int(math.ceil((height - size) / 2))
     x_offset = int(math.ceil((width - size) / 2))
 
-    if height > width:
-        if spatial_idx == 0:
-            y_offset = 0
-        elif spatial_idx == 2:
-            y_offset = height - size
-    else:
-        if spatial_idx == 0:
-            x_offset = 0
-        elif spatial_idx == 2:
-            x_offset = width - size
     cropped = images[
         :, :, y_offset : y_offset + size, x_offset : x_offset + size
     ]
+    return cropped'''
 
-    cropped_boxes = (
-        crop_boxes(boxes, x_offset, y_offset) if boxes is not None else None
-    )
-
-    return cropped, cropped_boxes
-
-
-def crop_EAC_image(images, spatial_idx, new_height = 224, new_width = 224):
-    height = images.shape[2]
-    width = images.shape[3]
-
-    frame_height = height//2
-    frame_width = width//3
-
-    frames = np.zeros([frame_height, frame_width, 3])
-    if spatial_idx < 3:
-        frames = images[:, :, 0:frame_height, (frame_width*spatial_idx) : (frame_width*(spatial_idx+1))-1]
-    else:
-        frames = images[:, :, frame_height:((frame_height*2)-1), frame_width : ((frame_width*2)-1)]
-        frames = np.rot90(frames,1,(2,3))
-        frames = torch.as_tensor(np.stack(frames))
-        #tmp = frames[:,1,:,:].cpu().permute(1,2,0).numpy() * 255
-        #import numpy as np
-        #from PIL import Image
-        #tmp2 = tmp.astype(np.uint8)
-        #im = Image.fromarray(tmp2)
-        #im.save("fram_crop_.png")
-        #asd
-
-    return torch.nn.functional.interpolate(
-            frames,
-            size=(new_height, new_width),
-            mode="bilinear",
-            align_corners=False,
-        )
 
 def clip_boxes_to_image(boxes, height, width):
     """
@@ -429,3 +387,52 @@ def color_normalization(images, mean, stddev):
         out_images[:, idx] = (images[:, idx] - mean[idx]) / stddev[idx]
 
     return out_images
+
+
+def rescale(images, size = 224):
+    height = images.shape[2]
+    width = images.shape[3]
+    new_width = size
+    new_height = size
+
+    if width < height:
+        new_height = int(math.floor((float(height) / width) * size))
+    else:
+        new_width = int(math.floor((float(width) / height) * size))
+ 
+    return torch.nn.functional.interpolate(
+            images,
+            size=(new_height, new_width),
+            mode="bicubic",
+            align_corners=False,
+        ),
+
+        
+def crop_EAC_image(images, spatial_idx, new_height = 224, new_width = 224):
+    height = images.shape[2]
+    width = images.shape[3]
+
+    frame_height = height//2
+    frame_width = width//3
+
+    frames = np.zeros([frame_height, frame_width, 3])
+    if spatial_idx < 3:
+        frames = images[:, :, 0:frame_height, (frame_width*spatial_idx) : (frame_width*(spatial_idx+1))-1]
+    else:
+        frames = images[:, :, frame_height:((frame_height*2)-1), frame_width : ((frame_width*2)-1)]
+        frames = np.rot90(frames,1,(2,3))
+        frames = torch.as_tensor(np.stack(frames))
+        #tmp = frames[:,1,:,:].cpu().permute(1,2,0).numpy() * 255
+        #import numpy as np
+        #from PIL import Image
+        #tmp2 = tmp.astype(np.uint8)
+        #im = Image.fromarray(tmp2)
+        #im.save("fram_crop_.png")
+        #asd
+
+    return torch.nn.functional.interpolate(
+            frames,
+            size=(new_height, new_width),
+            mode="bilinear",
+            align_corners=False,
+        )

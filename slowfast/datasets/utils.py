@@ -138,7 +138,7 @@ def spatial_sampling(
     Returns:
         frames (tensor): spatially sampled frames.
     """
-    assert spatial_idx in [-1, 0, 1, 2]
+    assert spatial_idx in [-1, 0, 1, 2, 3]
     if spatial_idx == -1:
         frames, _ = transform.random_short_side_scale_jitter(
             images=frames,

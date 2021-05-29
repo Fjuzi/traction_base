@@ -1,0 +1,111 @@
+filler,9,ocean,36,scene,a photo of an aquarium.
+filler,13,dirt,18,scene,a photo of an archaelogical excavation.
+filler,26,dusty,20,scene,a photo of an attic.
+filler,28,motor_oil,34,scene,a photo of an auto factory.
+filler,31,bread,5,scene,a photo of a bakery shop.
+filler,36,bamboo,42,scene,a photo of a bamboo forest.
+filler,40,village,50,scene,a photo of a barn.
+filler,41,village,50,scene,a photo of a barndoor.
+filler,43,dusty,20,scene,a photo of a basement.
+filler,45,seaside,46,scene,a photo of a bathroom.
+filler,48,seaside,46,scene,a photo of a beach.
+filler,49,beer,4,scene,a photo of a beach house.
+filler,53,beer,4,scene,a photo of a beer garden.
+filler,54,garden,24,scene,a photo of a beer hall.
+filler,62,meat,32,scene,a photo of a botanical garden.
+filler,72,candy_cane,9,scene,a photo of a butchers shop.
+filler,90,incense,30,scene,an indoor photo of a church.
+filler,97,seaside,46,scene,a photo of a coast.
+filler,99,coffee,15,scene,a photo of a coffee shop.
+filler,105,village,50,scene,a photo of a corral.
+filler,114,cake,8,scene,a photo of a delicatessen.
+filler,116,dirt,18,scene,a photo of a sand desert.
+filler,117,dirt,18,scene,a photo of a vegetation desert.
+filler,118,dirt,18,scene,a photo of a desert road.
+filler,133,motor_oil,34,scene,a photo of an engine room.
+filler,138,village,50,scene,a photo of a farm.
+filler,150,forest,11,scene,a photo of a broadleaf forest.
+filler,151,forest,11,scene,a photo of a forest path.
+filler,152,forest,11,scene,a photo of a forest road.
+filler,153,garden,24,scene,a photo of a formal garden.
+filler,158,gasoline,25,scene,a photo of a gas station.
+filler,173,hay,28,scene,a photo of a hayfield.
+filler,194,seaside,46,scene,a photo of an islet.
+filler,197,garden,24,scene,a photo of a japanese garden.
+filler,199,garbage,23,scene,a photo of a junkyard.
+filler,204,seaside,46,scene,a photo of a lagoon.
+filler,205,mountain_lake,35,scene,a photo of a lake/natural.
+filler,206,garbage,23,scene,a photo of a landfill.
+filler,209,grass,26,scene,a photo of a lawn.
+filler,224,mossy,33,scene,a photo of a marsh.
+filler,249,fruit_mix,22,scene,a photo of an orchard.
+filler,254,garden,24,scene,a photo of a park.
+filler,266,seaside,46,scene,a photo of a pier.
+filler,267,pizza,40,scene,a photo of a pizzeria.
+filler,279,rainforest,43,scene,a photo of a rainforest.
+filler,282,motor_oil,34,scene,a photo of a repair shop.
+filler,290,garden,24,scene,a photo of a roof garden.
+filler,295,sweat,49,scene,a photo of a sauna.
+filler,308,garbage,23,scene,a photo of a slum.
+filler,311,village,50,scene,a photo of a stable.
+filler,323,mossy,33,scene,a photo of a swamp.
+filler,333,garden,24,scene,a photo of a topiary garden.
+filler,342,ocean,36,scene,an underwater photo or deep ocean.
+filler,345,garden,24,scene,a photo of a vegetable garden.
+filler,348,village,50,scene,a photo of a village.
+filler,355,waterfall,51,scene,a photo of a waterfall.
+filler,357,seaside,46,scene,a photo of a wave.
+filler,362,grass,26,scene,a photo of a yard.
+filler,364,garden,24,scene,a photo of a zen garden.
+filler,271,mountain_lake,35,scene,a photo of a pond.
+filler,147,garden,24,scene,an indoor photo of a florist shop.
+filler,94,seaside,46,scene,a photo of a cliff.
+no smell,-1,no smell,0,action,a photo of no smell
+drinking shots,149,absinthe,1,action,a photo of drinking shots
+cutting apple,124,apple,2,action,a photo of cutting apple
+peeling apples,311,apple,2,action,a photo of peeling apples
+barbaquing,20,BBQ sauce,3,action,a photo of barbaquing
+pouring beer,384,beer,4,action,a photo of pouring beer
+tasting beer,521,beer,4,action,a photo of tasting beer
+breading or breadcrumbing,47,bread,5,action,a photo of breading or breadcrumbing
+eating burger,159,burger,6,action,a photo of eating burger
+cooking on a campfire,108,burning wood,7,action,a photo of cooking on a campfire
+making a cake,268,cake,8,action,a photo of making a cake
+eating cake,160,cake,8,action,a photo of eating cake
+roasting marshmallows,419,candy cane,9,action,a photo of roasting marshmallows
+eating carrotts,161,carrotts,10,action,a photo of eating carrotts
+making cheese,272,cheese,12,action,a photo of making cheese
+eating chips,162,chips,13,action,a photo of eating chips
+decorating the christmas tree,135,christmas_cianmony,14,action,a photo of decorating the christmas tree
+home roasting coffe,217,coffee,15,action,a photo of home roasting coffe
+baking cookies,18,cookies_s,17,action,a photo of baking cookies
+eating dougnuts,163,dougnuts,19,action,a photo of eating dougnuts
+mopping floor,290,dusty,20,action,a photo of mopping floor
+cooking egg,107,egg,21,action,a photo of cooking egg
+person collecting gerbage,313,garbage,23,action,a photo of person collecting gerbage
+pumping gas,389,gasoline,25,action,a photo of pumping gas
+moving lawn,295,grass,26,action,a photo of moving lawn
+eating hotdog,164,hotdog,29,action,a photo of eating hotdog
+leatherworking,259,leather,31,action,a photo of leatherworking
+chopping meat,88,meat (raw,32,action,a photo of chopping meat
+changing oil,81,motor oil,34,action,a photo of changing oil
+cutting orange,126,orange,37,action,a photo of cutting orange
+roasting pig,420,pig,38,action,a photo of roasting pig
+cutting pineapple,127,pineapple,39,action,a photo of cutting pineapple
+making pizza,276,pizza,40,action,a photo of making pizza
+carving pumpkin,73,pumpkin,41,action,a photo of carving pumpkin
+preparing salad,385,salad,44,action,a photo of preparing salad
+chopping vegetables,89,salad,44,action,a photo of chopping vegetables
+cooking sausages,109,sausage,45,action,a photo of cooking sausages
+smoking,477,smoke,47,action,a photo of smoking
+smoking pipe,479,smoke,47,action,a photo of smoking pipe
+extinguishing fire,171,smoke,47,action,a photo of extinguishing fire
+blowing out candles,38,smoke,47,action,a photo of blowing out candles
+eating spagetti,166,spaghetii,48,action,a photo of eating spagetti
+cutting watermelon,128,watermelon,52,action,a photo of cutting watermelon
+eating watermelon,167,watermelon,52,action,a photo of eating watermelon
+tasting wine,522,wine,53,action,a photo of tasting wine
+chiseling wood,87,wood,54,action,a photo of chiseling wood
+chopping wood,90,wood,54,action,a photo of chopping wood
+sawing wood,432,wood,54,action,a photo of sawing wood
+using circular saw,561,wood,54,action,a photo of using circular saw

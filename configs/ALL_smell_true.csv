@@ -1,0 +1,109 @@
+no smell,-1,no smell,0,action
+drinking shots,149,absinthe,1,action
+cutting apple,124,apple,2,action
+peeling apples,311,apple,2,action
+barbaquing,20,BBQ sauce,3,action
+pouring beer,384,beer,4,action
+tasting beer,521,beer,4,action
+breading or breadcrumbing,47,bread,5,action
+eating burger,159,burger,6,action
+cooking on a campfire,108,burning wood,7,action
+making a cake,268,cake,8,action
+eating cake,160,cake,8,action
+roasting marshmallows,419,candy cane,9,action
+eating carrotts,161,carrotts,10,action
+making cheese,272,cheese,12,action
+eating chips,162,chips,13,action
+decorating the christmas tree,135,christmas_cianmony,14,action
+home roasting coffe,217,coffee,15,action
+baking cookies,18,cookies_s,17,action
+eating dougnuts,163,dougnuts,19,action
+mopping floor,290,dusty,20,action
+cooking egg,107,egg,21,action
+person collecting gerbage,313,garbage,23,action
+pumping gas,389,gasoline,25,action
+moving lawn,295,grass,26,action
+eating hotdog,164,hotdog,29,action
+leatherworking,259,leather,31,action
+chopping meat,88,meat (raw,32,action
+changing oil,81,motor oil,34,action
+cutting orange,126,orange,37,action
+roasting pig,420,pig,38,action
+cutting pineapple,127,pineapple,39,action
+making pizza,276,pizza,40,action
+carving pumpkin,73,pumpkin,41,action
+preparing salad,385,salad,44,action
+chopping vegetables,89,salad,44,action
+cooking sausages,109,sausage,45,action
+smoking,477,smoke,47,action
+smoking pipe,479,smoke,47,action
+extinguishing fire,171,smoke,47,action
+blowing out candles,38,smoke,47,action
+eating spagetti,166,spaghetii,48,action
+cutting watermelon,128,watermelon,52,action
+eating watermelon,167,watermelon,52,action
+tasting wine,522,wine,53,action
+chiseling wood,87,wood,54,action
+chopping wood,90,wood,54,action
+sawing wood,432,wood,54,action
+using circular saw,561,wood,54,action
+bakery/shop,31,bread,5,scene
+beer_garden,53,beer,4,scene
+beer_hall,54,beer,4,scene
+delicatessen,114,cake,8,scene
+candytore,80,candy_cane,9,scene
+forest/broadleaf,150,forest,11,scene
+forest_path,151,forest,11,scene
+forest_road,152,forest,11,scene
+coffeehop,99,coffee,15,scene
+desert/sand,116,dirt,18,scene
+desert/vegetation,117,dirt,18,scene
+desert_road,118,dirt,18,scene
+archaelogical_excavation,13,dirt,18,scene
+attic,26,dusty,20,scene
+basement,43,dusty,20,scene
+orchard,249,fruitmix,22,scene
+junkyard,199,garbage,23,scene
+landfill,206,garbage,23,scene
+slum,308,garbage,23,scene
+botanical_garden,62,garden,24,scene
+formal_garden,153,garden,24,scene
+japanese_garden,197,garden,24,scene
+park,254,garden,24,scene
+roof_garden,290,garden,24,scene
+topiary_garden,333,garden,24,scene
+vegetable_garden,345,garden,24,scene
+zen_garden,364,garden,24,scene
+gastation,158,gasoline,25,scene
+lawn,209,grass,26,scene
+yard,362,grass,26,scene
+field/wild,141,grass_with_flowers,27,scene
+hayfield,173,hay,28,scene
+church/indoor,90,incense,30,scene
+butchershop,72,meat,32,scene
+marsh,224,mossy,33,scene
+swamp,323,mossy,33,scene
+auto_factory,28,motor_oil,34,scene
+engine_room,133,motor_oil,34,scene
+repairhop,282,motor_oil,34,scene
+lake/natural,205,mountain_lake,35,scene
+aquarium,9,ocean,36,scene
+underwater/ocean_deep,342,ocean,36,scene
+pizzeria,267,pizza,40,scene
+rainforest,279,rainforest,43,scene
+bamboo_forest,36,bamboo,42,scene
+beach,48,seaside,46,scene
+beach_house,49,seaside,46,scene
+coast,97,seaside,46,scene
+islet,194,seaside,46,scene
+lagoon,204,seaside,46,scene
+pier,266,seaside,46,scene
+wave,357,seaside,46,scene
+sauna,295,sweat,49,scene
+barn,40,village,50,scene
+barndoor,41,village,50,scene
+farm,138,village,50,scene
+stable,311,village,50,scene
+village,348,village,50,scene
+corral,105,village,50,scene
+waterfall,355,waterfall,51,scene

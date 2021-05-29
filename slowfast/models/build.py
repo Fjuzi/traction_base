@@ -4,6 +4,7 @@
 """Model construction functions."""
 
 import torch
+
 from fvcore.common.registry import Registry
 
 MODEL_REGISTRY = Registry("MODEL")
@@ -52,3 +53,6 @@ def build_model(cfg, gpu_id=None):
             module=model, device_ids=[cur_device], output_device=cur_device
         )
     return model
+
+
+
