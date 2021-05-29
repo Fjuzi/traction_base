@@ -8,7 +8,7 @@
 
 
 # Download
-Download and crop videos from 
+Download and crop videos from [DATASET.csv](https://github.com/Fjuzi/traction_base/blob/main/data/DATASET.csv).
 ```
 python .\activitynet\Crawler\Kinetics\download.py <DATASET.csv> <OUTPUT_PATH>
 ```
