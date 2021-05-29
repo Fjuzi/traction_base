@@ -2,7 +2,7 @@
 
 
 # Requirements
-We attached a requirements.txt with all the neccessary requirements. However, following the steps of installation will install everything properly as well. We rather recommend that way.
+We attached a [requirements](https://github.com/Fjuzi/traction_base/blob/main/requirements.txt) with all the neccessary requirements. However, following the steps of installation will install everything properly as well. We rather recommend that way.
 
 # Install
 Instalation of the scent and haptic predictor of the end-to-end mulsemedia system. 
@@ -33,9 +33,37 @@ python setup.py build develop
 pip install pytorchvideo
 ```
 
+Install CLIP (Optional) 
+In case using CLIP it needs to be additionally installed from their [github reporsitory](https://github.com/openai/CLIP). 
+
+```
+pip install ftfy regex tqdm
+pip install git+https://github.com/openai/CLIP.git
+```
+
+# Dataset
+
+The instructions of obtaining the dataset can be found in [DATA.md](https://github.com/Fjuzi/traction_base/blob/main/data/DATA.md)
+
+# Models (TODO)
+SlowFast and Scene recognition (DenseNet or ResNet) 
+
 # Usage
 
-TODO
+Prediction with the parallell network:
+```
+python tools/run_net.py \
+  --cfg configs/SLOWFAST_64x2_R101_50_50_kinetics.yaml \
+  DATA.PATH_TO_DATA_DIR /data/Peter/Code/slowfast/data/ \
+  TEST.CHECKPOINT_FILE_PATH /data/Peter/Code/slowfast/checkpoints/SLOWFAST_64x2_R101_50_50.pkl \
+  TRAIN.ENABLE False
+```
+
+Prediction with CLIP zero-shot:
+```
+python ./custom_tools/test_clip.py
+```
+
 
 # Ref
 
