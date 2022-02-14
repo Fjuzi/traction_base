@@ -84,7 +84,7 @@ class Kinetics(torch.utils.data.Dataset):
 
         classes = list()
         #with open(r"/data/Peter/Final/configs/kinetics_smell_true.csv", "r") as class_file:
-        with open(r"/data/Peter/Final/configs/ALL_smell_true.csv", "r") as class_file:
+        with open(r"/data/Peter/Final/configs/labels.csv", "r") as class_file:
             for line in class_file:
                 class_details = {
                     "classname": line.strip().split(',')[0],
