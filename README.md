@@ -2,7 +2,7 @@
 
 
 # Requirements
-We attached a [requirements](https://github.com/Fjuzi/traction_base/blob/main/requirements.txt) with all the neccessary requirements. However, following the steps of installation will install everything properly as well. We rather recommend that way.
+We attached a [requirements](https://github.com/Fjuzi/traction_base/blob/main/requirements.txt) list with all the neccessary requirements. However, following the steps of installation will install everything properly as well. We rather recommend that way.
 
 # Install
 Instalation of the scent and haptic predictor of the end-to-end mulsemedia system. 
