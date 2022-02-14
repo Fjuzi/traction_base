@@ -7,6 +7,8 @@
 - our downloader based on [activity-net]()
 
 
+[readme](https://github.com/Fjuzi/traction_base/blob/main/README.md)
+
 # Download
 Download and crop videos from [DATASET.csv](https://github.com/Fjuzi/traction_base/blob/main/data/DATASET.csv).
 ```
