@@ -1,4 +1,4 @@
-event_name,event_id,scent_name,scent_id,event_type
+event_name,event_id,effect_name,effect_id,event_type
 no smell,-1,no smell,0,action
 drinking shots,149,absinthe,1,action
 cutting apple,124,apple,2,action
