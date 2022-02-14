@@ -45,7 +45,7 @@ pip install git+https://github.com/openai/CLIP.git
 
 The instructions of obtaining the dataset can be found in [DATA.md](https://github.com/Fjuzi/traction_base/blob/main/data/DATA.md)
 
-# Models (TODO)
+# Models
 SlowFast and Scene recognition (DenseNet or ResNet) 
 
 # Usage
