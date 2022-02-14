@@ -7,8 +7,6 @@
 - our downloader based on [activity-net]()
 
 
-Follow the [readme](https://github.com/Fjuzi/traction_base/blob/main/README.md) file for setting up the application.
-
 # Download
 Download and crop videos from [DATASET.csv](https://github.com/Fjuzi/traction_base/blob/main/data/DATASET.csv).
 ```
@@ -17,3 +15,5 @@ python .\activitynet\Crawler\Kinetics\download.py <DATASET.csv> <OUTPUT_PATH>
 DATASET.csv is the csv containing the videos. It has the following format: label, youtube_id, time_start, time_end, split
 The script downloads the videos using youtube-dl in mp4 format, and then using ffmpeg converts them into EAC projection, libx264 video codec.
 This dataset can be directly fed to the system, which will perform the further preprocessing in runtime.
+
+Follow the [readme](https://github.com/Fjuzi/traction_base/blob/main/README.md) file for setting up the mulsemedia application.
