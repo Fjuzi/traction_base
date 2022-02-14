@@ -34,7 +34,7 @@ pip install pytorchvideo
 ```
 
 Install CLIP (Optional) 
-In case using CLIP it needs to be additionally installed from their [github reporsitory](https://github.com/openai/CLIP). 
+In case you want to use CLIP, it needs to be additionally installed from their [GitHub repository](https://github.com/openai/CLIP). 
 
 ```
 pip install ftfy regex tqdm
