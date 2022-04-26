@@ -4,6 +4,8 @@
 # Requirements
 We attached a [requirements](https://github.com/Fjuzi/traction_base/blob/main/requirements.txt) list with all the neccessary requirements. However, following these steps for installation will setup everything with recommended settings.
 
+Please, cite our paper when using this tool: P. Szabo, A. Simiscuka, S. Masneri, M. Zorrilla and G. -M. Muntean, "A CNN-based Framework for Enhancing 360 VR Experiences with Multisensorial Effects," in IEEE Transactions on Multimedia, doi: 10.1109/TMM.2022.3157556.
+
 # Install
 Instalation of the scent and haptic predictor of the end-to-end mulsemedia system. 
 
